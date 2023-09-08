@@ -22,6 +22,7 @@ const DatePicker: React.FC<DatePickerProps> = ({
 }) => {
   return ( 
     <DateRange
+      ariaLabels={{ yearPicker: 'year-aria' }}
       rangeColors={['#262626']}
       ranges={[value]}
       date={new Date()}

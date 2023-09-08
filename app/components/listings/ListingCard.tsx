@@ -43,12 +43,12 @@ const ListingCard: React.FC<ListingCardProps> = ({
     (e: React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation();
 
-    if (disabled) {
-      return;
-    }
+    // if (disabled) {
+    //   return;
+    // }
 
     onAction?.(actionId)
-  }, [disabled, onAction, actionId]);
+  }, [ onAction, actionId]);
 
   const price = useMemo(() => {
     if (reservation) {

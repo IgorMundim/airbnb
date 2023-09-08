@@ -36,6 +36,7 @@ const UserMenu:React.FC<UserMenuProps> = (
   <div className="relative">
     <div className=" flex flex-row items-center gap-3">
       <div
+        role='button'
         onClick={onRent}
         className="
           hidden
@@ -53,6 +54,7 @@ const UserMenu:React.FC<UserMenuProps> = (
         Airbnb your home
       </div>
       <div
+        role='menubar'
         onClick={toggleOpen}
         className="
           p-4

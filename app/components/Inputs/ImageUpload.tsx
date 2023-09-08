@@ -35,6 +35,7 @@ const ImageUpload:React.FC<ImageUploadProps> = ({
       {({ open }) => {
         return (
           <div
+            placeholder="open"
             onClick={() => open?.()}
             className="
               relative

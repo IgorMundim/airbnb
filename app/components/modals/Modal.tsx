@@ -43,17 +43,19 @@ const Modal: React.FC<ModalProps> = ({
   }, [disabled, onClose])
 
   const handleSubmit = useCallback(() => {
-    if (disabled) {
-      return
-    }
+    // if (disabled) {
+    //   return
+    // }
     onSubmit()
-  }, [disabled, onSubmit])
+  }, [onSubmit])
   const handleSecondaryAction = useCallback(() => {
-    if(disabled || !secondaryAction){
-      return
+    // if(disabled || !secondaryAction){
+    //   return
+    // }
+    if(secondaryAction){
+      secondaryAction()
     }
-    secondaryAction()
-  }, [disabled, secondaryAction])
+  }, [secondaryAction])
   if(!isOpen){
     return null
   }
@@ -150,6 +152,7 @@ const Modal: React.FC<ModalProps> = ({
               {/*footer*/}
               <div className="flex flex-col gap-2 p-6">
                 <div
+                  
                   className="
                     flex
                     flex-row

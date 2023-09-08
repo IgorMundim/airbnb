@@ -16,6 +16,7 @@ const Counter:React.FC<CounterProps> = ({
   const onAdd = useCallback(() => {
     onChange(value + 1)
   }, [onChange, value])
+
   const onReduce = useCallback(() =>{
     if(value === 1){
       return
@@ -34,9 +35,10 @@ const Counter:React.FC<CounterProps> = ({
           {subtitle}
         </div>
       </div>
-      <div className="flex flex-row items-center gap-4">
+      <div className="flex flex-row items-center gap-4" >
           <div
             onClick={onReduce}
+            placeholder="decrease"
             className="
              w-10
              h-10
@@ -59,6 +61,7 @@ const Counter:React.FC<CounterProps> = ({
           </div>
           <div
             onClick={onAdd}
+            placeholder="increase"
             className="
              w-10
              h-10

@@ -21,6 +21,7 @@ const HeartButton: React.FC<HeartButtonProps> = ({
 
   return (
     <div 
+      role="definition"
       onClick={toggleFavorite}
       className="
         relative

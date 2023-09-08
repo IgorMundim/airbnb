@@ -52,6 +52,7 @@ const Search = () => {
 
   return ( 
     <div
+      role='contentinfo'
       onClick={searchModal.onOpen}
       className="
         border-[1px] 

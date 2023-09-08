@@ -54,6 +54,7 @@ const LoginModal = () => {
       }
     })
   }
+  
   const toggle = useCallback(() => {
     loginModal.onClose()
     registerModel.onOpen()

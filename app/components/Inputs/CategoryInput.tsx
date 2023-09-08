@@ -16,6 +16,7 @@ const CategoryInput: React.FC<CategoryInputProps> = ({
 }) => {
   return (
     <div
+      role="definition"
       onClick={() => onClick(label)}
       className={`
       rounded-xl
@@ -26,7 +27,7 @@ const CategoryInput: React.FC<CategoryInputProps> = ({
       gap-3
       hover:border-black 
       transition
-      cursor-poiter
+      cursor-pointer
       ${selected ? 'border-black' : 'border-neutral-200'}
       `}
     >
